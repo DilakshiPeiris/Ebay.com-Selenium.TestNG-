@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Edge Testing">
+
+        <classes>
+            <parameter name="url" value="https://www.ebay.com/"></parameter>
+            <class name="org.example.BasicTest">
+                <methods>
+                    <include name="launchBrowserTest1"/>
+                </methods>
+            </class>
+
+            <class name="org.example.SelectMobileTest">
+                    <methods>
+                        <include name="launchURLTest2"/>
+                        <include name="verifyURLTest3"/>
+                        <include name="selectDropDownTest4"/>
+                        <include name="searchMobilePhoneTest5"/>
+                        <include name="selectCheckBoxTest6"/>
+                        <include name="selectFirstElementTest7"/>
+                        <include name="selectModelTest8"/>
+                        <include name="selectCarrierTest9"/>
+                        <include name="selectStorageTest10"/>
+                        <include name="selectColorTest11"/>
+                        <include name="selectCosmeticTest12"/>
+                        <include name="addQuantityTest13"/>
+                        <include name="printAttributesTest14"/>
+                        <include name="selectAddToCart"/>
+                        <include name="verifyDetails"/>
+                        <include name="verifyQuantity"/>
+                        <include name="verifySubTotal"/>
+                        <include name="printShippingFee"/>
+                    </methods>
+            </class>
+
+            <class name="org.example.AfterTest">
+                    <methods>
+                        <include name="exitBrowser"/>
+                    </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
